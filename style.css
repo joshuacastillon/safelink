@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: 'SnoopyFont';
+}
+@font-face {
+  font-family: 'SnoopyFont'; /* Name the font for later use */
+  src: url('./assets/font/snoopy_reg-webfont.otf') format('woff2'),
+       url('fonts/myfont.woff') format('woff'),
+       url('fonts/myfont.ttf') format('truetype'); /* Provide fallbacks for broader support */
+  font-weight: normal;
+  font-style: normal;
+}
+main{
+    width: 100%;
+    height: 100vh;
+   
+}
+.valentine_wrapper{
+    width: 100%;
+    height: 100%;;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+/* container for absolute-positioned buttons */
+.valentine{
+    padding: 30px;
+    position: relative;
+    border: 1px solid black;
+    background-color: rgb(245, 200, 200);
+color: rgb(129, 32, 32);
+    border-radius: 20px;
+}
+img{
+    width: 150px;
+    height: 300px;
+    margin-top: 20px;
+    
+}
+.options{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  
+    /* border: 1px solid black; */
+}
+.options .option-btn{
+    width: 100px;
+    height: 50px;
+    padding: 10px 20px;
+    background-color: rgb(129, 32, 32);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    /* smooth movement when left/top change */
+    transition: left 0.28s cubic-bezier(.2,.9,.2,1), top 0.28s cubic-bezier(.2,.9,.2,1), transform 180ms ease;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+
+/* Larger, easier targets on small screens (tablet / mobile) */
+@media (max-width: 768px) {
+    .options .option-btn{
+        padding: 14px 26px;
+        font-size: 18px;
+    }
+}

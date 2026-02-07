@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+    <main>
+        <div class="valentine_wrapper">
+            <div class="valentine">
+                <h1 id="greetingText">Hi, Sweetie! </h1>
+                <h1 id="questionText">Will you be my Valentine?</h1>
+                <img id="valentineImg" src="./assets/Mood Love Sticker.gif" alt="Valentine's Day Gif">
+
+                <div class="options">
+                    <button class="option-btn">Yes</button>
+                    <button class="option-btn">No</button>
+                </div>
+            </div>
+        </div>
+    <audio id="celebrationAudio" preload="auto">
+        <source src="./assets/the-one-you-love-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+       
+    </main>
+   
+    <script src="app.js"></script>
+    <script>
+    (function(){
+        emailjs.init("SSx7Pk47f1QYvksxq");
+    })();
+</script>
+</body>
+</html>
