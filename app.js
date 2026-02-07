@@ -128,7 +128,7 @@ document.querySelectorAll(".option-btn")[0].addEventListener("click", function (
 
    
     .then(function(response) {
-        alert("Email sent successfully!");
+        alert("Email sent successfully! Kindly please check your email love. Thank you! ❤️");
     }, function(error) {
         alert("Failed to send email.");
         console.log(error);
